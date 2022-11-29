@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imgs/logo.png" />
+    <title>Aspio</title>
+</head>
+
+<body>
+    <!--codigo padrão-->
+    <header>
+        <div id="logo">
+            <img id="img1" src="imgs/logo.png">
+            <a id="titulo" href="index.html">Aspio</a>
+        </div>
+    </header>
+    <!---Menuzin--->
+    <div class="boi-ralado">
+        <div id="menu">
+            <a class="icone-menu" href="index.html"><img onmouseover="muda();" onmouseleave="volta();" id="casa1"
+                    class="atalhoCasa" src="imgs/casa.png"></img></a>
+            <a class="icone-menu" href="sobre.html"><img onmouseover="muda2();" onmouseleave="volta2();" id="info1"
+                    class="atalhoInfo" src="imgs/info.png"></img></a>
+            <a class="icone-menu" href="grupo.html"><img onmouseover="muda3();" onmouseleave="volta3();" id="grupo1"
+                    class="atalhoGrupo" src="imgs/grupo.png"></img></a>
+        </div>
+        <div class="bezerro">
+            <!--inicio-->
+            <div class="caderneta">
+                <div class="afresco">
+                    <div class="nominho">Mapa-mundi: Casos de Covid-19 </div>
+                    <div id="meu-mapa"></div>
+                </div>
+            </div>
+            <!------------------------------>
+            <!---------inicio--------->
+            <div class="caderneta">
+                <div class="afresco">
+                    <div class="nominho">grafico-pizza: Casos de Covid-19 </div>
+                    <div id="grafico-pizza"></div>
+                </div>
+            </div>
+            <!------------------------------->
+
+            <!--tabela-->
+            <div class="caderneta">
+                <div class="afresco">
+                    <div class="nominho">Tabela: Casos de Covid-19 </div>
+                    <button id="btnObterDados" type="button" onclick="carregarDados();">
+                        Obter Dados
+                    </button>
+                    <div id="div-erro"></div>
+                    <div id="table_div">
+                        <table id="tabela-dados">
+                        <thead>
+                            <th>Sigla</th>
+                            <th>Estados</th>
+                            <th>Casos</th>
+                            <th>Mortes</th>
+                            <th>Suspeitos</th>
+                            <th id="chato-pa-caralho">Descartados</th>
+                        </thead>
+                        <tbody id="linhas">
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------->
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="script.js"></script>
+
+</html>
